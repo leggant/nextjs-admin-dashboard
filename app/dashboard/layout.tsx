@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import SideBar from '../ui/dashboard/sidebar/SideBar';
-import NavBar from '../ui/dashboard/navbar/NavBar';
+import NavBar from '@components/dashboard/navbar/NavBar';
+import SideBar from '@components/dashboard/sidebar/SideBar';
 
 export const metadata: Metadata = {
-  title: 'Next.js - Dashboard Layout',
+  title: 'Dashboard',
   description: 'Next.js',
 };
 
@@ -19,7 +19,7 @@ export default function DashboardLayout({
       </div>
       <div>
         <NavBar />
-        {children}
+        { children }
       </div>
     </div>
   );
